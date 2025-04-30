@@ -14,7 +14,7 @@ import java.util.regex.*;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     private static final Pattern ippPattern = Pattern.compile("((?:\\d{1,3}\\.){3}\\d{1,3}):(\\d{1,5})\\b");
-    private static final Pattern ipPattern = Pattern.compile("(?:\\d{1,3}\\.){3}\\d{1,3}\\b");
+    private static final Pattern ipPattern = Pattern.compile(   "(?:\\d{1,3}\\.){3}\\d{1,3}\\b");
     private static final Pattern urlPattern = Pattern.compile("https?://[\\w\\.-]+(/[\\S]*)?");
     private static final Pattern portPattern = Pattern.compile("(?:\\bport\\s*(\\d{1,5})\\b|\\b(\\d{1,5})\\s*port\\b)", Pattern.CASE_INSENSITIVE);
     private static class TokenTag {
@@ -31,7 +31,7 @@ public class Main {
         while (true) {
 
             Scanner scanner = new Scanner(System.in, StandardCharsets.UTF_8);
-            System.out.println("Enter your sentence (English):");
+            System.out.println("Enter your sentence :");
             String input = scanner.nextLine();
 
             // Step 1: Detect and record special tokens and their spans
