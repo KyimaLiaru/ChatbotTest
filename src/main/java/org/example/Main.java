@@ -192,10 +192,10 @@ public class Main {
             for (TokenTag token : taggedTokens) {
                 System.out.printf("[%s]-(%s) ", token.token, token.tag);
             }
-//            System.out.println("\n===[Meaning Blocks]===");
-//            for (TokenTag chunk : chunks) {
-//                System.out.printf("[%s]-(%s) ", chunk.token, chunk.tag);
-//            }
+            System.out.println("\n===[Meaning Blocks]===");
+            for (TokenTag chunk : chunks) {
+                System.out.printf("[%s]-(%s) ", chunk.token, chunk.tag);
+            }
             System.out.println("\n======================\n");
             // Check Meaning Block Analysis of Input -- END
 
